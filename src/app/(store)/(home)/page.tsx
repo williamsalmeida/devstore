@@ -21,7 +21,7 @@ export default async function Home() {
   return (
     <div className="grid-rows-6 grid max-h-[860px] grid-cols-9 gap-6">
       <Link
-        href={`/products/${highlightedProducts.slug}`}
+        href={`/product/${highlightedProducts.slug}`}
         className="group relative col-span-6 row-span-6 flex items-end justify-center overflow-hidden rounded-lg bg-zinc-900"
       >
         <Image
@@ -48,7 +48,7 @@ export default async function Home() {
         return (
           <Link
             key={product.id}
-            href={`/products/${product.slug}`}
+            href={`/product/${product.slug}`}
             className="group relative col-span-3 row-span-3 flex items-end justify-center overflow-hidden rounded-lg bg-zinc-900"
           >
             <Image
