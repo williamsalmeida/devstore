@@ -1,6 +1,6 @@
 'use client'
 
-import { Skeleton } from '@/app/components/skeleton'
+import { Skeleton } from '@/components/skeleton'
 import { useSearchParams } from 'next/navigation'
 
 export default function SearchLoading() {
