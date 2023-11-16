@@ -1,8 +1,9 @@
-import { api } from '@/data/api'
-import { Product } from '@/data/types/products'
+/* eslint-disable @next/next/no-img-element */
 import { env } from '@/env'
+import { api } from '@/data/api'
 import { ImageResponse } from 'next/og'
 import { zinc } from 'tailwindcss/colors'
+import { Product } from '@/data/types/products'
 
 export const runtime = 'edge'
 
@@ -41,7 +42,13 @@ export default async function Image({ params }: { params: { slug: string } }) {
           background: zinc[950],
         }}
       >
-        <img src={productImageURL} alt="" style={{ width: '100%' }} />
+        <img
+          src={productImageURL}
+          alt=""
+          width={1200}
+          height={630}
+          style={{ width: '100%' }}
+        />
       </div>
     ),
     {
