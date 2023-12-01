@@ -39,16 +39,20 @@ export default async function Image({ params }: { params: { slug: string } }) {
           height: '100%',
           display: 'flex',
           flexDirection: 'column',
+          alignItems: 'center',
           background: zinc[950],
         }}
       >
-        <img
-          src={productImageURL}
-          alt=""
-          width={1200}
-          height={630}
-          style={{ width: '100%' }}
-        />
+        <span
+          style={{
+            color: zinc[50],
+            fontSize: 32,
+            padding: 20,
+          }}
+        >
+          {product.title}
+        </span>
+        <img src={productImageURL} alt="" />
       </div>
     ),
     {
